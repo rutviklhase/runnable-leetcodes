@@ -6,19 +6,8 @@ class ListNode:
 #Solution on Leetcode starts here -
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
-
-        if not head:
-            return None
+        #Your code goes here
         
-        newHead = head
-        
-        if head.next:
-            newHead = self.reverseList(head.next)
-            head.next.next = head
-            
-        head.next = None
-        return newHead
-    
     def printList(self, head: ListNode) -> ListNode:
         
         print(head.val)
